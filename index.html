@@ -1,6 +1,8 @@
 <html>
 <head>
 	<title>Monuments Home</title>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Raleway:500,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
@@ -28,7 +30,7 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus commodi laudantium corporis id dignissimos perferendis, dicta aut quia, alias ullam? Quas facilis neque enim earum error ullam porro sit quam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum illum quae explicabo facere ea fugit aspernatur totam. A aspernatur explicabo dignissimos facilis, blanditiis, mollitia illum natus perferendis odio enim veritatis.
 				</p>
-				<input type="submit" value="READ MORE">
+				<button type="submit">READ MORE</button>
 			</article>
 
 			<article class="single-article">
@@ -37,19 +39,73 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum quis, perspiciatis magni fugiat. Nulla a itaque, earum ipsam modi fugit, rerum reiciendis fugiat velit aliquam beatae. Unde, eaque, iusto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur maiores adipisci, alias tempora qui tempore nulla quae possimus iure porro minus minima sunt, autem inventore. Nulla cumque deleniti molestiae dolorem!
 				</p>
-				<input type="submit" value="READ MORE">
+				<button type="submit">READ MORE</button>
 			</article>
 
-			<article>
+			<article class="single-article">
 				<img src="imgs/article_3.jpg" alt="food-plate">
 				<h3>Issue Eighteen &mdash; Food</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde rem omnis odit quod modi, quaerat velit, nulla, ipsum soluta delectus sequi. Culpa non cum eum! Quo velit sequi minus vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quae harum deserunt ab quidem minus suscipit animi, vero officiis aliquid expedita eum fuga modi. Omnis excepturi magnam ullam sapiente officia?
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde rem omnis odit quod modi, quaerat velit, nulla, ipsum soluta delectus sequi. Culpa non cum eum! Quo velit sequi minus vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti molestiae dolorem! Est, quae harum deserunt ab quidem minus suscipit animi, vero officiis aliquid expedita eum fuga modi. Omnis excepturi magnam ullam sapiente officia?
 				</p>
-				<input type="submit" value="READ MORE">
+				<button type="submit">READ MORE</button>
 			</article>
 		</div>
 	</section>
+
+	<section class="about-mag">
+		<h2>About the Magazine</h2>
+		<h3 class="centered-heading">A lifestyle magazine crafted with love</h3>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolorem distinctio aliquam, facere dolores, dolore alias asperiores corporis rerum doloremque explicabo consequatur neque. Alias soluta, distinctio error, tempore unde non? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos inventore illum obcaecati corporis, ea nam perspiciatis voluptates deserunt dolorum eius sint praesentium assumenda vitae veritatis, quo cupiditate eaque in ipsum!</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iste maxime consectetur odit laboriosam, quod vitae quae quam delectus quia ab eveniet. Reprehenderit eum perspiciatis sint quibusdam nisi ipsam consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, sunt deserunt accusamus provident placeat magni! Unde accusamus inventore cumque illo ab totam pariatur voluptas neque, culpa explicabo magni. Mollitia, ipsam?</p>
+	</section>
+
+	<section>
+		<h2>Issue Twenty</h2>
+		<h3 class="centered-heading">A visual guide to the southwest</h3>
+		<div class="pictures-div">
+			<div class="picture-column">
+				<img src="imgs/gallery_1.jpg" alt="thorny cacti">
+				<img src="imgs/gallery_3.jpg" alt="prickly">
+			</div>
+
+			<div class="picture-column">
+				<img src="imgs/gallery_4.jpg" alt="sandy desert">
+				<img src="imgs/gallery_2.jpg" alt="mountains">
+			</div>
+
+			<div class="picture-column">
+				<img src="imgs/gallery_5.jpg" alt="southwest desert">
+				<img src="imgs/gallery_6.jpg" alt="lone cactus">
+			</div>
+		</div>
+	</section>
 	
+	<h3 id="leave-comment">Get In Touch</h3>
+    <div class="leave-a-comment-div">
+    	<form method="post" action="">
+      		<input type="text" name="name" placeholder="FULL NAME" class="col-third">
+      		<input type="text" name="email" placeholder="EMAIL" class="col-third">
+      		<input type="text" name="subject" placeholder="SUBJECT" class="col-third">
+      		<textarea name="message" placeholder="MESSAGE" cols="30" rows="10"></textarea>
+      		<button type="submit" class="form-button">SUBMIT</button>  
+    	</form>
+    </div>
+       <footer>
+       <div class="wrap">
+         <nav>
+           <a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+           <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+           <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+         </nav>
+         <div class="emailform">
+           <input type="text" name="email" placeholder="EMAIL ADDRESS">
+           <button type="submit">SUBSCRIBE</button>
+         </div>
+       </div>
+       <p> &copy;2018 Karthik Ram</p> 
+     </footer>
 </body>
 </html>
