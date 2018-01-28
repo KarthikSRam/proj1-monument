@@ -1,3 +1,7 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
 img {
 	max-width: 100%;
 }
@@ -6,15 +10,23 @@ body {
   font-family: Verdana, sans-serif;
 }
 
+
 p {
+  font-family: 'Lato', sans-serif;
   color: #47545D;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 nav a {
   color: #8197A8;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
+  margin: 1em 1.5em;
 }
 
 .emailform {
@@ -39,9 +51,9 @@ footer nav a {
   text-transform: uppercase;
   font-weight: bold;
 }
-nav {
+/*nav {
   text-align: center;
-}
+}*/
 
 .links {
   display: flex;
@@ -103,6 +115,29 @@ footer .wrap {
   padding: 30px 15px;
 }
 
+input {
+  outline: 0;
+  border: 2px solid #44545E;
+  color: #44545E;
+  padding: 8px 25.5px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  margin: 0.2em;
+}
+
+textarea {
+  outline: 0;
+  border: 2px solid #44545E;
+  color: #44545E;
+  padding: 8px 25.5px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  margin: 0.2em;
+  width: 88%;
+}
+
 button {
   cursor: pointer;
   outline: 0;
@@ -120,8 +155,19 @@ button {
   text-align: center;
 }
 
+.leave-a-comment-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
 .col-half {
   width: 40%;
+}
+
+.form-button {
+  width: 95%;
 }
 
 button:hover {
