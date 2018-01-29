@@ -29,6 +29,13 @@ nav a {
   	margin: 1em 1.5em;
 }
 
+.hamburger {
+  color: #8197A8;
+  font-size: 27px;
+  padding: 10px 20px;
+  display: none;
+}
+
 .article-div {
 	display: flex;
 	flex-direction: row;
@@ -193,3 +200,49 @@ button:hover {
   color: white;
   font-weight: 600;
 }
+
+@media screen and (max-width: 560px) {
+
+  .hamburger {
+    display: inline-block;
+  }
+    
+  .links {
+    display: none;
+  }
+
+  .col-third {
+    width: 90%;
+  }
+
+  .emailform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emailform button {
+    margin-top: 0.8em;
+    width: 60%;
+  }
+
+  .about-mag {
+	background-color: #D4F2F5;
+	padding: 6em 2em;
+  }
+
+  .article-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+  }
+
+  .pictures-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+
+}
+
