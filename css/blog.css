@@ -6,11 +6,6 @@ img {
 	max-width: 100%;
 }
 
-body {
-  font-family: Verdana, sans-serif;
-}
-
-
 p {
   font-family: 'Lato', sans-serif;
   color: #47545D;
@@ -54,11 +49,6 @@ footer nav a {
 /*nav {
   text-align: center;
 }*/
-
-.links {
-  display: flex;
-  justify-content: space-around;
-}
 
 h1, h2, h3, h4 {
   text-transform: uppercase;
@@ -182,4 +172,48 @@ button:hover {
 
 h1 {
   text-align: center;
+}
+
+.hamburger {
+  color: #8197A8;
+  font-size: 27px;
+  padding: 10px 20px;
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+
+  .hamburger {
+    display: inline-block;
+  }
+    
+  .links {
+    display: none;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .col-half {
+    width: 90%;
+  }
+
+  .emailform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emailform button {
+    margin-top: 0.8em;
+    width: 60%;
+  }
+
 }
