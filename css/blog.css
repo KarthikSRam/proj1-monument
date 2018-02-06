@@ -153,11 +153,11 @@ button {
 }
 
 .col-half {
-  width: 40%;
+  width: 39.7%;
 }
 
 .form-button {
-  width: 95%;
+  width: 95.5%;
 }
 
 button:hover {
@@ -186,7 +186,7 @@ h1 {
   .hamburger {
     display: inline-block;
   }
-    
+
   .links {
     display: none;
   }
