@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Raleway:500,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<div class="topnav-div">
@@ -59,7 +61,7 @@
 	<section class="about-mag">
 		<h2>About the Magazine</h2>
 		<h3 class="centered-heading">A lifestyle magazine crafted with love</h3>
-		
+
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolorem distinctio aliquam, facere dolores, dolore alias asperiores corporis rerum doloremque explicabo consequatur neque. Alias soluta, distinctio error, tempore unde non? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos inventore illum obcaecati corporis, ea nam perspiciatis voluptates deserunt dolorum eius sint praesentium assumenda vitae veritatis, quo cupiditate eaque in ipsum!</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iste maxime consectetur odit laboriosam, quod vitae quae quam delectus quia ab eveniet. Reprehenderit eum perspiciatis sint quibusdam nisi ipsam consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, sunt deserunt accusamus provident placeat magni! Unde accusamus inventore cumque illo ab totam pariatur voluptas neque, culpa explicabo magni. Mollitia, ipsam?</p>
@@ -85,16 +87,62 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<h3 id="leave-comment">Get In Touch</h3>
     <div class="leave-a-comment-div">
-    	<form method="post" action="">
-      		<input type="text" name="name" placeholder="FULL NAME" class="col-third">
-      		<input type="text" name="email" placeholder="EMAIL" class="col-third">
-      		<input type="text" name="subject" placeholder="SUBJECT" class="col-third">
-      		<textarea name="message" placeholder="MESSAGE" cols="30" rows="10"></textarea>
-      		<button type="submit" class="form-button">SUBMIT</button>  
+
+
+    	<!-- <form method="post" action="">
+				<div class="col-third">
+	      	<input type="text" name="name" placeholder="FULL NAME*">
+					<p class="error-message">Please enter your full name.</p>
+				</div>
+				<div class="col-third">
+	      	<input type="text" name="email" placeholder="EMAIL*" >
+					<p class="error-message">Please enter an email address.</p>
+				</div>
+				<div class="col-third">
+	      	<input type="text" name="subject" placeholder="SUBJECT*" >
+					<p class="error-message">Please enter a subject.</p>
+				</div>
+				<div>
+	      	<textarea name="message" placeholder="MESSAGE*" cols="30" rows="10"></textarea>
+					<p class="error-message">Please enter a message.</p>
+				</div>
+      	<button type="submit" class="form-button">SUBMIT</button>
+    	</form> -->
+
+			<!-- <form method="post" action="">
+	      	<input type="text" name="name" placeholder="FULL NAME*" class="col-third">
+	      	<input type="text" name="email" placeholder="EMAIL*" class="col-third">
+
+	      	<input type="text" name="subject" placeholder="SUBJECT*" class="col-third">
+
+	      	<textarea name="message" placeholder="MESSAGE*" cols="30" rows="10"></textarea>
+
+      	<button type="submit" class="form-button">SUBMIT</button>
+			</form> -->
+
+			<form id="comment-form" method="post" action="">
+				<div class="form-group col-third">
+	      	<input type="text" name="name" placeholder="FULL NAME*">
+					<p class="error-message col-third">Please enter your full name.</p>
+				</div>
+				<div class="form-group col-third">
+	      	<input type="text" name="email" placeholder="EMAIL*">
+					<p class="error-message col-third">Please enter an email address.</p>
+				</div>
+				<div class="form-group col-third">
+	      	<input type="text" name="subject" placeholder="SUBJECT*">
+					<p class="error-message col-third">Please enter a subject.</p>
+				</div>
+				<div class="form-group">
+	      	<textarea name="message" placeholder="MESSAGE*" cols="30" rows="10"></textarea>
+					<p class="error-message">Please enter a message.</p>
+				</div>
+      	<button type="submit" class="form-button">SUBMIT</button>
     	</form>
+
     </div>
        <footer>
        <div class="wrap">
@@ -108,7 +156,7 @@
            <button type="submit">SUBSCRIBE</button>
          </div>
        </div>
-       <p> &copy;2018 Karthik Ram</p> 
+       <p> &copy;2018 Karthik Ram</p>
      </footer>
 </body>
 </html>

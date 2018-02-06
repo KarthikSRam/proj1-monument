@@ -67,10 +67,11 @@ article {
 }
 
 textarea {
-	width: 90%;
+	/* width: 91.1%; */
+	width: 97%
 }
 
-p {
+article p, section p {
 	font-family: 'Lato', sans-serif;
 	text-align: center;
 	color: #47545D;
@@ -132,7 +133,6 @@ input {
   color: #44545E;
   padding: 8px 25.5px;
   font-weight: 500;
-  /*text-transform: uppercase;*/
   font-size: 12px;
   letter-spacing: 1.2px;
   margin: 0.2em;
@@ -143,11 +143,11 @@ textarea {
   border: 2px solid #44545E;
   color: #44545E;
   padding: 8px 25.5px;
+	/* padding: 8px 25.5px 8px 40px ; */
   font-weight: 500;
-  /*text-transform: uppercase;*/
   font-size: 12px;
   letter-spacing: 1.2px;
-  margin: 0.2em;
+  margin: 0.2em 0.2em 0.2em 1.3em;
 }
 
 button {
@@ -173,7 +173,8 @@ button {
 }
 
 .form-button {
-	width: 90%;
+	width: 97%;
+	/* padding-left: 7px; */
 }
 .emailform {
   display: flex;
@@ -186,13 +187,25 @@ button {
 }
 
 .col-third {
-	width: 29.75%;
+	/* width: 29.75%; */
+	width: 31%;
+	margin: 0em 0.6em;
+	/* width: 100%; */
 }
 
 .leave-a-comment-div {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	/* justify-content: space-around; */
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
 }
 
 button:hover {
@@ -201,12 +214,29 @@ button:hover {
   font-weight: 600;
 }
 
+.error {
+	border: 2px solid #ED5254;
+}
+
+.error-message {
+	margin: -5px 0 12px;
+	text-align: left;
+	font-size: .9rem;
+	color: #ED5254;
+	display: none;
+	width: 100%;
+}
+
+.form-group input, .form-group:last-of-type {
+	width: 100%
+}
+
 @media screen and (max-width: 560px) {
 
   .hamburger {
     display: inline-block;
   }
-    
+
   .links {
     display: none;
   }
@@ -245,4 +275,3 @@ button:hover {
   }
 
 }
-
